@@ -68,9 +68,11 @@ max-height: 90vh;
       window.location.href = "home.html"; // Change to your home page
     }, 15000);
 
-    if (window.innerWidth < 768) { // Common mobile width threshold
-    alert("Mobile pe kholne hi nahin dongae kya kar legi");
-    window.location.href = "unsupported.html"; // Or replace with your own page
+     const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    alert("Phone pe kholne hi nahin donga hehe");
+    window.location.href = "unsupported.html"; // Redirect to another page
   }
   </script> 
 </body>
