@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: white;
+      font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeOut 1s ease-out 10s forwards;
+
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 5s ease-in;
+      color: black;
+      position: absolute;
+      top: 12%;
+      z-index: 2;
+      font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+      margin-bottom: 20px;
+    }
+img{
+  animation: fadeIn 5s ease-in;
+background-size: cover;
+object-fit: cover;
+max-height: 90vh;
+  width: auto;
+  position: absolute;
+  top: 11%;
+}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; }
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Welcome to My Dear Love.</h1>
+  <img src="https://i.pinimg.com/736x/18/34/b9/1834b91ac041a8c037daf15ff5c34164.jpg" alt="">
+
+
+  <script>
+    setTimeout(function () {
+      window.location.href = "home.html"; // Change to your home page
+    }, 15000);
+
+    if (window.innerWidth < 768) { // Common mobile width threshold
+    alert("Mobile pe kholne hi nahin dongae kya kar legi");
+    window.location.href = "unsupported.html"; // Or replace with your own page
+  }
+  </script> 
+</body>
+</html>
+
+
+
+
